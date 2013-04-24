@@ -1,0 +1,15 @@
+{
+  "name": "wand-boilerplate",
+  "version": "0.0.1",
+  "dependencies": {
+    "requirejs": "~2.1.5",
+    "requirejs-domready": "~2.0.1",
+    "requirejs-text": "~2.0.5",
+    "modernizr": "~2.6.2",
+    "jquery": "~1.9.1",
+    "underscore": "~1.4.4",
+    "backbone": "~1.0.0",
+    "handlebars": "~1.0.0-rc.3",
+    "wand": "0.0.3"
+  }
+}
