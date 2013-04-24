@@ -10,6 +10,6 @@
     "underscore": "~1.4.4",
     "backbone": "~1.0.0",
     "handlebars": "~1.0.0-rc.3",
-    "wand": "0.0.1"
+    "wand": "0.0.3"
   }
 }
