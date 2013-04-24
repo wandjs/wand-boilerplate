@@ -1,6 +1,7 @@
 {
   "name": "wand-boilerplate",
   "version": "0.0.1",
+  "main": "./app/index.html",
   "dependencies": {
     "requirejs": "~2.1.5",
     "requirejs-domready": "~2.0.1",
