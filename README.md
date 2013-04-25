@@ -1,15 +1,29 @@
-#wand-boilerplate
+#Wand Boilerplate
 
-An opinionated boilerplate project and workflow for HTML5.
+An opinionated boilerplate project and workflow for HTML5/JavaScript applications.
+
+
+
+###Features
+
+* Rapid two step setup
+* Automatically bundles JQuery, RequireJS, Backbone, Underscore, Handlebars and WandJS
+* Automatic CSS compilation with [Stylus](http://learnboost.github.io/stylus/)
+* Automatic JavaScript linting with [JSHint](http://www.jshint.com/)
+* Built in development server running on [Connect](https://github.com/gruntjs/grunt-contrib-connect)
+
+*(Full deployment including RequireJS optimization coming soon)*
 
 
 ##Getting started
 
 ###Quickstart
 
-*Note: The setup process will soon be automated into one command line call with [Yeoman](http://yeoman.io), but please bear with us in the meantime.*
+*Note: The setup process will soon be automated into one command line call with [Yeoman](http://yeoman.io), but in the meantime you'll need to make sure you have [NPM](http://npmjs.org/) (Node Package Manager) and [Bower](http://github.com/twitter/bower) (front end package manager) installed before you begin the quickstart*
 
-**Step 1:** First create a new directory then navigate there in a terminal window.
+
+
+**Step 1:** Create a new directory, then navigate there in a terminal window.
 
 **Step 2:** Paste the following commands into your terminal.
 
@@ -20,8 +34,8 @@ An opinionated boilerplate project and workflow for HTML5.
 	npm install
 	bower install
 	grunt serve
-
-**Step 3:** Once the installation is complete run the last unexecuted command `grunt serve`
+	# Setup complete
+	
 
 You're done!
 
@@ -53,3 +67,7 @@ Install browser dependencies with [Bower](http://github.com/twitter/bower)
 Start an [Express](https://github.com/visionmedia/express) server (on port 8000)
 
 	grunt serve
+	
+Just a comment, but ensures that previous command is executed
+
+	# Setup complete
