@@ -6,13 +6,13 @@ An opinionated boilerplate project and workflow for HTML5/JavaScript application
 
 ###Features
 
-* Rapid two step setup
+* Simple two step setup process
 * Automatically bundles JQuery, RequireJS, Backbone, Underscore, Handlebars and WandJS
 * Automatic CSS compilation with [Stylus](http://learnboost.github.io/stylus/)
 * Automatic JavaScript linting with [JSHint](http://www.jshint.com/)
 * Built in development server running on [Connect](https://github.com/gruntjs/grunt-contrib-connect)
 
-*(Full deployment including RequireJS optimization coming soon)*
+*(See Roadmap for future plans)*
 
 
 ##Getting started
@@ -71,3 +71,11 @@ Start an [Express](https://github.com/visionmedia/express) server (on port 8000)
 Just a comment, but ensures that previous command is executed
 
 	# Setup complete
+	
+	
+##Roadmap
+
+Future plans include:
+
+* Yeoman integration - reducing setup to one command line call
+* Default RequireJS optimization task
