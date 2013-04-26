@@ -12,7 +12,7 @@ An opinionated boilerplate project and workflow for HTML5/JavaScript application
 * Automatic JavaScript linting with [JSHint](http://www.jshint.com/)
 * Built in development server running on [Connect](https://github.com/gruntjs/grunt-contrib-connect)
 
-*(See Roadmap for future plans)*
+*(See [Roadmap](https://github.com/wandjs/wand-boilerplate#roadmap) for future plans)*
 
 
 ##Getting started
