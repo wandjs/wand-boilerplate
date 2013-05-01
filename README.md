@@ -27,6 +27,8 @@ An opinionated boilerplate project and workflow for HTML5/JavaScript application
 
 **Step 2:** Paste the following commands into your terminal.
 
+*Note: This can be copy and pasted in one go, since the terminal will run each command sequentially*
+
 
 	git clone git@github.com:wandjs/wand-boilerplate.git
 	cd wand-boilerplate/
