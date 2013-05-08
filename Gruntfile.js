@@ -1,7 +1,5 @@
 'use strict';
 
-// var Mocha = require('mocha');
-
 module.exports = function(grunt) {
 
   // Project configuration.
@@ -41,6 +39,20 @@ module.exports = function(grunt) {
       }
     },
 
+    handlebars: {
+      compile: {
+        options: {
+          amd: true,
+          processName: function(filename) {
+            return filename.replace('app/templates/', '').replace('.hbs', '');
+          }
+        },
+        files: {
+          "app/templates/templates.js": "app/templates/**/*.hbs"
+        }
+      }
+    },
+
     watch: {
       stylus: {
         files: ['app/styles/**/*.styl'],
@@ -49,6 +61,10 @@ module.exports = function(grunt) {
       jshint: {
         files: ['app/scripts/**/*.js'],
         tasks: ['jshint']
+      },
+      handlebars: {
+        files: ['app/templates/**/*.hbs'],
+        tasks: ['handlebars']
       }
     },
 
@@ -66,9 +82,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-stylus');
   grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.loadNpmTasks('grunt-contrib-handlebars');
 
   // By default, lint and run all tests.
-  grunt.registerTask('default', ['jshint', 'stylus']);
+  grunt.registerTask('default', ['jshint', 'stylus', 'handlebars']);
 
   grunt.registerTask('serve', ['default', 'connect', 'watch']);
 };

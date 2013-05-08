@@ -6,7 +6,8 @@ require.config({
     'underscore': '../components/underscore/underscore',
     'backbone': '../components/backbone/backbone',
     'domReady': '../components/requirejs-domready/domReady',
-    'handlebars': '../components/handlebars/handlebars'
+    'handlebars': '../components/handlebars/handlebars.runtime',
+    'templates': '../templates/templates'
   },
 
   packages: [
@@ -50,7 +51,6 @@ require([
   // Remove libraries from global window object. They will remain inside the requirejs scope.
   $.noConflict(true);
   _.noConflict();
-  // delete createjs;
 
   // Explicitly set the require-scoped version of jQuery that Backbone should use
   Backbone.$ = $;
