@@ -44,11 +44,11 @@ module.exports = function(grunt) {
         options: {
           amd: true,
           processName: function(filename) {
-            return filename.replace('app/templates/', '').replace('.hbs', '');
+            return filename.replace('app-src/templates/', '').replace('.hbs', '');
           }
         },
         files: {
-          "app/templates/templates.js": "app/templates/**/*.hbs"
+          "app/templates/templates.js": "app-src/templates/**/*.hbs"
         }
       }
     },
@@ -63,7 +63,7 @@ module.exports = function(grunt) {
         tasks: ['jshint']
       },
       handlebars: {
-        files: ['app/templates/**/*.hbs'],
+        files: ['app-src/templates/**/*.hbs'],
         tasks: ['handlebars']
       }
     },
