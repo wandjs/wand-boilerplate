@@ -34,7 +34,7 @@ module.exports = function(grunt) {
           compress: false
         },
         files: {
-          'app/styles/main.css': 'app/styles/src/main.styl'
+          'app/styles/main.css': 'app-src/styles/main.styl'
         }
       }
     },
@@ -55,7 +55,7 @@ module.exports = function(grunt) {
 
     watch: {
       stylus: {
-        files: ['app/styles/**/*.styl'],
+        files: ['app-src/styles/**/*.styl'],
         tasks: ['stylus']
       },
       jshint: {
