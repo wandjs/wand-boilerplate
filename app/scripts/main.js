@@ -5,7 +5,6 @@ require.config({
     'jquery': '../components/jquery/jquery',
     'underscore': '../components/underscore/underscore',
     'backbone': '../components/backbone/backbone',
-    'domReady': '../components/requirejs-domready/domReady',
     'handlebars': '../components/handlebars/handlebars.runtime',
     'templates': '../templates/templates'
   },
@@ -39,13 +38,11 @@ require([
   'text',
   'jquery',
   'underscore',
-  'domReady',
   'backbone'
 ],function(
   text,
   $,
   _,
-  domReady,
   Backbone
 ) {
   // Remove libraries from global window object. They will remain inside the requirejs scope.
@@ -62,13 +59,7 @@ require([
   // loaded and run before we start resolving the app's dependencies
   
   require(['app'], function(app) {
-
-    // domReady will only call the function passed to it once the DOM has fully loaded
-    // Note that the main module returns a function to run
-    // domReady(main);
-    domReady(function(){
-      app.start();
-    });
+    app.start();
   });
 
 
