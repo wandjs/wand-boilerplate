@@ -1,7 +1,6 @@
 require.config({
   // Map libraries and longer path names to shorter ones
   paths: {
-    'text': '../components/requirejs-text/text',
     'jquery': '../components/jquery/jquery',
     'underscore': '../components/underscore/underscore',
     'backbone': '../components/backbone/backbone',
@@ -9,12 +8,11 @@ require.config({
     'templates': '../templates/templates'
   },
 
-  packages: [
-    {
-      name: 'wand',
-      location: '../components/wand'
-    }
-  ],
+  // Treat wand as a CommonJS-style package
+  packages: [{
+    name: 'wand',
+    location: '../components/wand'
+  }],
 
   // This helps wrap and capture the output from non-AMD files
   // Some will pollute the global scope but we clean them up in the boot module below
@@ -35,12 +33,10 @@ require.config({
 // This boot sequence front-loads all the libraries to ensure they've been added to the global
 // window scope. We can then clean them up so they only exist in the requirejs scope.
 require([
-  'text',
   'jquery',
   'underscore',
   'backbone'
 ],function(
-  text,
   $,
   _,
   Backbone
@@ -57,10 +53,7 @@ require([
 
   // The main module is loaded separately, this ensures the library dependencies above are all
   // loaded and run before we start resolving the app's dependencies
-  
   require(['app'], function(app) {
     app.start();
   });
-
-
 });
