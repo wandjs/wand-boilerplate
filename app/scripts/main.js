@@ -4,7 +4,7 @@ require.config({
     'jquery': '../components/jquery/jquery',
     'underscore': '../components/underscore/underscore',
     'backbone': '../components/backbone/backbone',
-    'handlebars': '../components/handlebars/handlebars.runtime',
+    'handlebars': '../components/handlebars.js/dist/handlebars.runtime',
     'templates': '../templates/templates'
   },
 

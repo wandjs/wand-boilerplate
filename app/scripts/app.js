@@ -1,8 +1,15 @@
 define(function(require, exports, module) {
 
+  var RootView = require('views/RootView');
+
   return {
     start: function() {
-      console.log('Hello Wand');
+
+      this.rootView = new RootView({
+        el: '#root'
+      });
+      this.rootView.render();
+
     }
   };
 

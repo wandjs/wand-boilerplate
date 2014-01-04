@@ -1,7 +1,7 @@
 {
   "name": "wand-boilerplate",
   "description": "Wand Boilerplate Project",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "homepage": "https://github.com/wandjs/wand-boilerplate",
   "author": {
     "name": "WandJS team",
@@ -31,7 +31,7 @@
     "grunt-contrib-stylus": "~0.5.0",
     "grunt-contrib-watch": "~0.3.1",
     "grunt-contrib-connect": "~0.3.0",
-    "grunt-contrib-handlebars": "~0.5.8"
+    "grunt-contrib-handlebars": "~0.6.0"
   },
   "engines": {
     "node": ">=0.8.0"
