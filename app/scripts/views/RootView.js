@@ -1,30 +1,31 @@
-if (typeof define !== 'function') { var define = require('amdefine')(module); }
+define([
+    'wand/lib/BaseView',
+    'templates'
+  ], function (
+    BaseView,
+    templates
+  ) {
+    return BaseView.extend({
 
-define(function(require, exports, module) {
+      initialize:function(options){
+      },
 
-  var BaseView = require('wand/lib/BaseView');
-  var templates = require('templates');
+      elements: {
+      },
 
-  module.exports = BaseView.extend({
+      template: function() {
+        return templates.root;
+      },
 
-    initialize:function(options){
-      
-    },
+      templateData: function() {
+        return {};
+      },
 
-    elements: {
-    },
+      afterRender: function() {
+      }
 
-    template: function() {
-      return templates.root;
-    },
-
-    templateData: function() {
-      return {};
-    },
-
-    afterRender: function() {
-    }
-
-  });
-
-});
+    });
+  
+    
+  }
+);
