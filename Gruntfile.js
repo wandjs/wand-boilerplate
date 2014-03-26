@@ -34,7 +34,7 @@ module.exports = function(grunt) {
           compress: true
         },
         files: {
-          'app/styles/main.css': 'app-src/styles/main.less'
+          'app/styles/main.css': 'app-src/styles/_html5-boilerplate.less'
         }
       }
     },
@@ -54,9 +54,9 @@ module.exports = function(grunt) {
     },
 
     watch: {
-      stylus: {
+      less: {
         files: ['app-src/styles/**/*.less'],
-        tasks: ['stylus']
+        tasks: ['less']
       },
       jshint: {
         files: ['app/scripts/**/*.js'],
