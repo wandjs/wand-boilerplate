@@ -8,7 +8,7 @@ define(function(require, exports, module) {
       this.rootView = new RootView({
         el: '#root'
       });
-      this.rootView.render();
+      this.rootView.processRender();
 
     }
   };
