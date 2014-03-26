@@ -28,13 +28,13 @@ module.exports = function(grunt) {
       }
     },
 
-    stylus: {
+    less: {
       compile: {
         options: {
-          compress: false
+          compress: true
         },
         files: {
-          'app/styles/main.css': 'app-src/styles/main.styl'
+          'app/styles/main.css': 'app-src/styles/main.less'
         }
       }
     },
@@ -55,7 +55,7 @@ module.exports = function(grunt) {
 
     watch: {
       stylus: {
-        files: ['app-src/styles/**/*.styl'],
+        files: ['app-src/styles/**/*.less'],
         tasks: ['stylus']
       },
       jshint: {
@@ -80,12 +80,12 @@ module.exports = function(grunt) {
   // These plugins provide necessary tasks.
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-contrib-stylus');
+  grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-handlebars');
 
   // By default, lint and run all tests.
-  grunt.registerTask('default', ['jshint', 'stylus', 'handlebars']);
+  grunt.registerTask('default', ['jshint', 'less', 'handlebars']);
 
   grunt.registerTask('serve', ['default', 'connect', 'watch']);
 };
