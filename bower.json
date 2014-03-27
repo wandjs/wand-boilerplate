@@ -1,6 +1,6 @@
 {
   "name": "wand-boilerplate",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "dependencies": {
     "requirejs": "~2.1.5",
     "modernizr": "~2.6.2",
@@ -8,6 +8,6 @@
     "underscore": "~1.6.0",
     "backbone": "~1.1.2",
     "handlebars.js": "1.0.0",
-    "wand": "0.0.16"
+    "wand": "~0.0.17"
   }
 }
